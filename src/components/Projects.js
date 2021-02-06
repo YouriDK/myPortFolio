@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//import project from "../../portfoliostudio/schemas/project";
 import SanityClient from "../client.js";
 
 export default function Project() {
@@ -7,12 +6,20 @@ export default function Project() {
 
   useEffect(() => {
     SanityClient.fetch(
-      `*[_type == "project]{
-      title, date, place, description, project , link , tags
-    }`
+      `*[_type == "project"]{
+        title, 
+        date, 
+        place, 
+        description, 
+        projectType, 
+        link, 
+        tags
+      }`
     )
       .then((data) => setProjectData(data))
       .catch(console.error);
+
+    console.log("DATA2 - ", projectData);
   }, []);
 
   return (
@@ -23,21 +30,24 @@ export default function Project() {
           {" "}
           Welcome to my projects page
         </h2>
-        <section>
+        <section className="grid grid-cols-2 gap-8">
           {projectData &&
-            projectData.map((project, index) => {
-              <article key={project.title}>
-                <h3 classname="text-gray-800 text-3xl fontèbold hover:text-red-700">
+            projectData.map((project, index) => (
+              <article
+                key={project.title}
+                className="relative rounded-lg shadow-xl bg-white p-16"
+              >
+                <h3 className="text-gray-800 text-3xl font-bold hover:text-red-700">
                   <a
-                    href={Project.link}
+                    href={project.link}
                     alt={project.title}
                     tager="_blank"
-                    rel="noonpener noreferrer"
+                    rel="noopener noreferrer"
                   >
                     {project.title}
                   </a>
                 </h3>
-                <div className="text-gray-500 text-xs sapce-x-4">
+                <div className="text-gray-500 text-xs space-x-4">
                   <span>
                     <strong className="font-bold"> Finished On </strong>
                     {new Date(project.date).toLocaleDateString()}
@@ -56,19 +66,19 @@ export default function Project() {
                   </p>
 
                   <a
-                    className="text-red-500 font-bold hover:underline hover:text-red-400 "
-                    href={Project.link}
+                    className="text-red-500 font-bold hover:underline hover:text-red-400 text-xl"
+                    href={project.link}
                     alt={project.title}
                     tager="_blank"
-                    rel="noonpener noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <span role="img" aria-label="right pointer">
-                      👉
+                      View this project 👉
                     </span>
                   </a>
                 </div>
-              </article>;
-            })}
+              </article>
+            ))}
         </section>
       </section>
     </main>

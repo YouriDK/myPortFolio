@@ -22,7 +22,7 @@ export default function NavBar() {
             Blog Posts
           </NavLink>
           <NavLink
-            to="/projet"
+            to="/project"
             activeClassName="text-red-100 bg-red-700"
             className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest"
           >
