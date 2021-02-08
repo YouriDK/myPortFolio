@@ -8,7 +8,7 @@ export default function NavBar() {
       <div className="header">
         <nav className="flex">
           <NavLink to="/" className="text-navbar">
-            Youri
+            Acceuil
           </NavLink>
           <NavLink to="/post" className="text-navbar">
             Formation
@@ -20,7 +20,7 @@ export default function NavBar() {
             Expérience professionnelle
           </NavLink>
           <NavLink to="/realisation" className="text-navbar">
-            Réalisation
+            Réalisations
           </NavLink>
           <NavLink to="/about" className="text-navbar">
             A propos !
