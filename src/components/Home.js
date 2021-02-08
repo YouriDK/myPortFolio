@@ -1,19 +1,18 @@
 import React from "react";
-import image from "../binary.jpeg";
+import image from "../proc.jpg";
 
 export default function Home() {
   return (
     <main>
-      <img
-        src={image}
-        alt="Binary"
-        className="absolute object-cover w-full h-full"
-      />
-      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-        <h1 className="text-6xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name">
+      <img src={image} alt="Binary" className="backgroundImage" />
+      <section className="sectionHome">
+        <h1 className="fontPicked">
           {" "}
-          Aloha. I'm Youri
+          Bonjour & Bienvenue <br />
         </h1>
+        <h4 className="fontPicked">
+          Je suis Youri, Développeur Web en constante évolution !
+        </h4>
       </section>
     </main>
   );

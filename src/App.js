@@ -6,6 +6,9 @@ import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Projects";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import Professionnal from "./components/Professional";
+import Realisation from "./components/Realisation";
 
 function App() {
   return (
@@ -26,7 +29,10 @@ function App() {
         />
         <Route component={Post} path="/post" />
         <Route component={Project} path="/project" />
+        <Route component={Professionnal} path="/professional" />
+        <Route component={Realisation} path="/realisation" />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,13 @@
+@media (min-width: 1024px) {
+  .sectionHome {
+    padding-top: 16rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sectionHome h1 {
+    line-height: 1.375;
+    font-size: 150px;
+    /*text-6xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name*/
+  }
+}
