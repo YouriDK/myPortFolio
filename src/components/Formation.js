@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import BackGround from "./BackGround";
 //import { Link } from "react-router-dom";
 import SanityClient from "../client.js";
 
@@ -69,7 +68,10 @@ export default function Formation() {
                     </span>
                   </div>
                   <br />
-                  <button className="up"> Plus d'information ici !</button>
+                  <button className="up absolute">
+                    {" "}
+                    Plus d'information ici !
+                  </button>
                   {console.log(formation.title)}
                 </article>
               ))}

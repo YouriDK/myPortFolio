@@ -4,7 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 /* import css*/
-import "./index.css";
+import "./css/index.css";
 import "./css/Home.css";
 import "./css/NavBar.css";
 import "./css/Formation.css";

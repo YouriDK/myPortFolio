@@ -120,3 +120,8 @@ footer {
 .white {
   color: var(--light);
 }
+
+.absolute {
+  position: relative;
+  z-index: 1;
+}
