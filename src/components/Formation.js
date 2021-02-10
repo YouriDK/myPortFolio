@@ -22,9 +22,12 @@ export default function Formation() {
 
   return (
     <main>
-      <section>
-        <h1 className="page-title fontPicked">Formation</h1>
-        <h2 className="page-subtitle fontPicked">Mon parcours scolaire</h2>
+      <section className="sectionHome">
+        <div className="titles">
+          <span className="title fontPicked">Formation</span>
+          <br />
+          <span className="subtitle fontPicked">Mon parcours scolaire</span>
+        </div>
 
         <div>
           {formationData &&

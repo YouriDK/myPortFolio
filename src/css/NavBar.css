@@ -1,10 +1,13 @@
 .navbar {
   background-color: var(--blue);
-  width: auto;
   display: flex;
   justify-content: space-between;
+
+  /* ! Désactive les liens */
   position: absolute;
-  height: 10%;
+  /* *  Sans le Z-index,on ne peut plus cliquer sur les liens */
+  z-index: 1;
+  height: 80px;
   width: 100%;
 }
 
@@ -25,7 +28,7 @@
   line-height: 4.5rem;
 
   /* * items-center*/
-  align-items: center; /*inflex-flex 0 hover:text-green-800 text-4xl font-bold cursive tracking-widest*/
+  align-items: center;
 }
 
 .text-navbar:hover {

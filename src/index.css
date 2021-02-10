@@ -1,6 +1,8 @@
-/*@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
-@import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+
+#root {
+  height: 100vh;
+}
 
 :root {
   --blue: #007bff;
@@ -24,22 +26,17 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --background: #d7fae0;
+  --header: 80px;
+  --footer: 35px;
+  /*
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --background: #d7fae0;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  --breakpoint-xl: 1200px;*/
 }
-main {
-  min-height: 100vh;
-  background-color: var(--background);
-}
+
 html,
 body {
   height: 100%;
@@ -47,17 +44,26 @@ body {
 body {
   margin: 0;
 }
+main {
+  padding-top: -80px;
+  padding-bottom: -35px;
+  height: 100%;
+  background-color: var(--background);
+}
 
 footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   background-color: var(--blue);
+  height: 35px;
   padding-top: 10px;
   padding-bottom: 10px;
+
   color: var(--yellow);
   font-size: 1.5rem;
   font: italic;
   text-align: center;
-  bottom: 0;
 }
 
 .fontPicked {
@@ -67,28 +73,19 @@ footer {
 }
 /* *  Titre de chaque page*/
 
-.page-title {
+.titles {
+  margin-top: 80px;
+}
+
+.titles .title {
+  color: var(--primary);
   text-align: center;
   font-size: 3rem;
 }
 
-.page-subtitle {
+.titles .subtitle {
+  color: var(--info);
+  margin-top: 150px;
   text-align: center;
   font-size: 1.5rem;
-}
-
-/* ! A ENLEVER APRES   */
-.cursive {
-  font-family: "Playfair Display", serif;
-  font-weight: 100;
-}
-
-.prose img {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-}
-
-.home-name {
-  font-size: 150px;
 }
