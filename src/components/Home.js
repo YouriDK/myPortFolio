@@ -3,8 +3,8 @@ import image from "../proc.jpg";
 
 export default function Home() {
   return (
-    <main>
-      <img src={image} alt="Binary" className="backgroundImage" />
+    <main className="main-home">
+      {/*<img src={image} alt="Binary" className="backgroundImage" />*/}
       <section className="sectionHome">
         <h1 className="fontPicked">
           {" "}

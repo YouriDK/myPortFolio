@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Professionnal from "./components/Professional";
 import Realisation from "./components/Realisation";
+import Formation from "./components/Formation";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route component={Project} path="/project" />
         <Route component={Professionnal} path="/professional" />
         <Route component={Realisation} path="/realisation" />
+        <Route component={Formation} path="/formation" />
       </Switch>
       <Footer />
     </BrowserRouter>

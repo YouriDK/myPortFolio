@@ -1,0 +1,28 @@
+.block {
+  column-gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.block-formation {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: aquamarine;
+}
+
+.info-formation {
+  color: #00ff00;
+  font-family: arial;
+  font-size: 4pt;
+  min-height: 50px;
+  min-width: 50px;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #666;
+  background: #ffffff;
+}
+
+.artcle-formation {
+  min-height: 400px;
+  min-width: 400px;
+  background-color: red;
+}

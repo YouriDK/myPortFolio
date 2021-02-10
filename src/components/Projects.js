@@ -18,8 +18,6 @@ export default function Project() {
     )
       .then((data) => setProjectData(data))
       .catch(console.error);
-
-    console.log("DATA2 - ", projectData);
   }, []);
 
   return (

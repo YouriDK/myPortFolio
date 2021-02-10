@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import "./css/Home.css";
 import "./css/NavBar.css";
+import "./css/Formation.css";
 
 ReactDOM.render(
   <React.StrictMode>

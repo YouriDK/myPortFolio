@@ -4,14 +4,15 @@ export default {
   type: "document",
   fields: [
     { name: "title", title: "Title", type: "string" },
-    { name: "year", title: "Year", type: "datetime" },
+    { name: "year", title: "Year", type: "date" },
     { name: "school", title: "School", type: "string" },
     { name: "place", title: "Place", type: "string" },
-    { name: "options", title: "Options", type: "text" },
+    { name: "options", title: "Options", type: "string" },
     {
-      name: "body",
-      title: "Body",
-      type: "blockContent",
+      name: "notions",
+      title: "Notions",
+      type: "array",
+      of: [{ type: "string" }],
     },
   ],
 };
