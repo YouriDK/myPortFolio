@@ -7,7 +7,8 @@
   position: absolute;
   /* *  Sans le Z-index,on ne peut plus cliquer sur les liens */
   z-index: 1;
-  height: 80px;
+  min-height: 80px;
+
   width: 100%;
 }
 

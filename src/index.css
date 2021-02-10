@@ -35,12 +35,24 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;*/
+
+  --fill: #a972cb;
+  --pulse: #ef6eae;
+  --close: #ff7f82;
+  --raise: #ffa260;
+  --up: #e4cb58;
+  --slide: #8fc866;
+  --offset: #19bc8b;
 }
 
 html,
 body {
   height: 100%;
 }
+/*
+body {
+  background-color: #021027;
+}*/
 body {
   margin: 0;
 }
@@ -51,6 +63,10 @@ main {
   background-color: var(--background);
 }
 
+main section {
+  position: absolute;
+  width: 100%;
+}
 footer {
   position: absolute;
   bottom: 0;
@@ -75,6 +91,7 @@ footer {
 
 .titles {
   margin-top: 80px;
+  text-align: center;
 }
 
 .titles .title {
@@ -88,4 +105,18 @@ footer {
   margin-top: 150px;
   text-align: center;
   font-size: 1.5rem;
+}
+
+.font-medium {
+  font-size: 1.4em;
+}
+.font-normal {
+  font-size: 1.1em;
+}
+
+.space {
+  margin-top: 20px;
+}
+.white {
+  color: var(--light);
 }

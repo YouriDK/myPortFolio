@@ -8,6 +8,9 @@ import "./index.css";
 import "./css/Home.css";
 import "./css/NavBar.css";
 import "./css/Formation.css";
+import "./css/Responsive.css";
+import "./css/Button.css";
+import "./css/Background.css";
 
 ReactDOM.render(
   <React.StrictMode>

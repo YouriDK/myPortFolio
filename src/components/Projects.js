@@ -18,6 +18,7 @@ export default function Project() {
     )
       .then((data) => setProjectData(data))
       .catch(console.error);
+    console.log("FORMATION -", projectData);
   }, []);
 
   return (
@@ -55,7 +56,7 @@ export default function Project() {
                     {project.place}
                   </span>
                   <span>
-                    <strong classname="font-bold">
+                    <strong className="font-bold">
                       {project.projectType}{" "}
                     </strong>
                   </span>
