@@ -2,7 +2,7 @@
   background-image: url("../proc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  max-width: 100%;
 }
 
 .sectionHome {
@@ -16,7 +16,6 @@
   font-size: 5rem;
   line-height: 1;
   font: bold;
-  color: var(--cyan);
 }
 
 .block-title h4 {

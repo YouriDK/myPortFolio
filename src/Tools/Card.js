@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import * as fun from "../Tools/Function";
 
 function flipAdd(params) {
   var element = document.getElementById(params);
@@ -13,46 +14,67 @@ function flipRemove(params) {
 }
 
 export default function Card(props) {
+  const [info, setInfo] = useState(null);
+
+  useEffect(() => {
+    if (props.Parcours !== undefined) {
+      setInfo(props.Parcours);
+    }
+  }, []);
+
   return (
-    <div className="container-card">
-      <div className="deck">
-        <div id="try" className="card ">
-          <div className="front face">
-            <h2>Button</h2>
-            <button
-              onClick={() => {
-                flipAdd("try");
-              }}
-              className="flip rad-button"
-            >
-              Flip me
-            </button>
-            <div className="bottext">
-              <h3>6000kr</h3>
+    <div>
+      {info && (
+        <div>
+          <div className="deck">
+            <div id={props.index} className="card ">
+              <div className="front face">
+                <h2>{info.title}</h2>
+                <ul>
+                  <li>Chez {info.entreprise}</li>
+                  <li>
+                    De {fun.Month(new Date(info.from).getMonth())}{" "}
+                    {new Date(info.from).getFullYear()} à{" "}
+                    {fun.Month(new Date(info.to).getMonth())}{" "}
+                    {new Date(info.to).getFullYear()}
+                  </li>
+                </ul>
+                <h3>{info.sujet}</h3>
+                <button
+                  onClick={() => {
+                    flipAdd(props.index);
+                  }}
+                  className="flip rad-button "
+                >
+                  Cliquer ici pour plus dinformations
+                </button>
+                <div className="bottext">
+                  <h3>France</h3>
+                </div>
+              </div>
+              <div className="back face">
+                <h2>Responsabilités</h2>
+                <ul>
+                  {info.taches.map((tache) => (
+                    <li>{tache}</li>
+                  ))}
+                </ul>
+                <div className="botprice">
+                  <h3>France</h3>
+                </div>
+                <button
+                  className="return flip"
+                  onClick={() => {
+                    flipRemove(props.index);
+                  }}
+                >
+                  <i className="fa fa-undo"></i>
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="back face">
-            <h2>Basic</h2>
-            <ul>
-              <li>6 Sider</li>
-              <li>Kontaktside</li>
-              <li>SEO optimeret</li>
-              <li>Mobilvenlig</li>
-            </ul>
-            <div className="botprice">
-              <h3>6000kr</h3>
-            </div>
-            <button
-              className="return flip"
-              onClick={() => {
-                flipRemove("try");
-              }}
-            >
-              <i className="fa fa-undo"></i>
-            </button>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }

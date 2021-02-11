@@ -5,7 +5,7 @@ export default function Home() {
     <main className="main home">
       <section className="section sectionHome">
         <div className="block-title">
-          <h1 className="fontPicked">
+          <h1 className=" fontPicked light ">
             {" "}
             Bonjour & Bienvenue <br />
           </h1>

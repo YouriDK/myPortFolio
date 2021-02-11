@@ -1,14 +1,19 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
+/* ! https://codepen.io/Ossoona/pen/GJmvmJ */
 * {
   box-sizing: border-box;
 }
 
 .container-card {
-  width: 1000px;
+  /* 
+    *width:100px
+    */
+
+  flex-wrap: wrap;
+  width: auto;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 button:focus {
@@ -17,8 +22,8 @@ button:focus {
 
 .deck {
   margin: 15px;
-  width: 270px;
-  height: 380px;
+  width: 500px;
+  height: 400px;
   position: relative;
   -webkit-perspective: 1000px;
   perspective: 1000px;
@@ -117,8 +122,9 @@ button:focus {
 
 .rad-button {
   border: 2px solid gray;
-  color: gray;
-  width: 90px;
+  color: var(--gray-dark);
+  /* !  AVant c'était 90px ! */
+  width: auto;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 10px;
   border-radius: 4px;
@@ -134,7 +140,7 @@ button:focus {
 
 .rad-button:hover {
   color: gray;
-  background-color: white;
+  background-color: var(--light);
 }
 
 .front h2,
@@ -188,4 +194,33 @@ button:focus {
 }
 .return:focus {
   outline: none;
+}
+
+/* *    */
+
+.front h2 {
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.front h3 {
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.front ul {
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.front ul li {
+  margin-top: 15px;
+  color: whitesmoke;
 }

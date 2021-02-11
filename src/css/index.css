@@ -27,8 +27,7 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --background: #d7fae0;
-  --header: 80px;
-  --footer: 35px;
+
   /*
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -48,6 +47,8 @@
 html,
 body {
   height: 100%;
+  /*background-color: var(--background);*/
+  background-color: #021027;
 }
 /*
 body {
@@ -60,7 +61,6 @@ main {
   padding-top: -80px;
   padding-bottom: -35px;
   height: 100%;
-  background-color: var(--background);
 }
 
 .main .section {

@@ -34,7 +34,6 @@ function App() {
         <Route component={Realisation} path="/realisation" />
         <Route component={Formation} path="/formation" />
       </Switch>
-      <Footer />
     </BrowserRouter>
   );
 }

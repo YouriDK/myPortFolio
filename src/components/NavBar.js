@@ -21,14 +21,10 @@ export default function NavBar() {
         <NavLink to="/realisation" className="text-navbar">
           Réalisations
         </NavLink>
+
         <NavLink to="/about" className="text-navbar">
           A propos !
         </NavLink>
-        <NavLink to="/post" className="text-navbar">
-          Post
-        </NavLink>{" "}
-      </nav>
-      <div className="icons">
         <SocialIcon
           url="https://linkedin.com/in/youri-choucoutou-690522142"
           className="icon"
@@ -36,14 +32,8 @@ export default function NavBar() {
           fgColor="#fff"
           style={{ height: 35, width: 35 }}
         />
-        <SocialIcon
-          url="https://www.youtube.com/channel/UCZTTqJo4YHomMHeTGXjrouA"
-          className="icon"
-          target="_blank"
-          fgColor="#fff"
-          style={{ height: 35, width: 35 }}
-        />
-      </div>
+        {<div class="animation start-home"></div>}
+      </nav>
     </header>
   );
 }
