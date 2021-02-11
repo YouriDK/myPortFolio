@@ -1,0 +1,6 @@
+.post-xp {
+  position: relative;
+  max-height: 400px;
+  max-width: 700px;
+  background-color: var(--pink);
+}

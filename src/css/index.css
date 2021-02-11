@@ -63,7 +63,7 @@ main {
   background-color: var(--background);
 }
 
-main section {
+.main .section {
   position: absolute;
   width: 100%;
 }

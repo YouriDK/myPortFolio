@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="home">
-      <section className="sectionHome">
+    <main className="main home">
+      <section className="section sectionHome">
         <div className="block-title">
           <h1 className="fontPicked">
             {" "}

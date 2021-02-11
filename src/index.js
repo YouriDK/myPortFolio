@@ -11,6 +11,8 @@ import "./css/Formation.css";
 import "./css/Responsive.css";
 import "./css/Button.css";
 import "./css/Background.css";
+import "./css/Professionnal.css";
+import "./css/Card.css";
 
 ReactDOM.render(
   <React.StrictMode>

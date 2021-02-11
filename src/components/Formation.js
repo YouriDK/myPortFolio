@@ -21,12 +21,12 @@ export default function Formation() {
   }, []);
 
   return (
-    <main>
-      <section>
+    <main className="main">
+      <section className="section">
         <div className="titles">
           <span className="title fontPicked">Parcours scolaire</span>
         </div>
-        <div className="centrer ">
+        <div className="centrer">
           <section className="container-formation">
             {formationData &&
               formationData.map((formation, index) => (
