@@ -4,8 +4,6 @@ import * as fun from "../Tools/Function";
 function flipAdd(params) {
   var element = document.getElementById(params);
   element.classList.add("flipped");
-
-  element.classList.remove();
 }
 
 function flipRemove(params) {

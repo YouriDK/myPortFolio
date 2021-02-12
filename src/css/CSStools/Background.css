@@ -1,7 +1,6 @@
 /* * Background Test : https://codepen.io/mohaiman/pen/MQqMyo */
 
 .area {
-  background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 }
 

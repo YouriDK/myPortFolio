@@ -68,7 +68,6 @@
   --hover: #1973bc;
 }
 button {
-  color: var(--color);
   transition: 0.25s;
 }
 button:hover,
@@ -78,7 +77,8 @@ button:focus {
 }
 
 button {
-  background: var(--cyan);
+  color: var(--teal);
+  background: none;
   border: 2px solid;
   border-radius: 10px;
   font: inherit;

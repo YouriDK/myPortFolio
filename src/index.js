@@ -4,16 +4,20 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 /* import css*/
-import "./css/index.css";
-import "./css/Home.css";
-import "./css/NavBar.css";
-import "./css/Formation.css";
 import "./css/Responsive.css";
-import "./css/Button.css";
-import "./css/Background.css";
-import "./css/Professionnal.css";
-import "./css/Card.css";
-import "./css/Ligth.css";
+
+import "./css/CSScomponents/index.css";
+import "./css/CSScomponents/Home.css";
+import "./css/CSScomponents/NavBar.css";
+import "./css/CSScomponents/Formation.css";
+import "./css/CSScomponents/Professionnal.css";
+import "./css/CSScomponents/Skills.css";
+
+import "./css/CSStools/Button.css";
+import "./css/CSStools/Background.css";
+import "./css/CSStools/Card.css";
+import "./css/CSStools/Light.css";
+import "./css/CSStools/SkillBar.css";
 
 ReactDOM.render(
   <React.StrictMode>

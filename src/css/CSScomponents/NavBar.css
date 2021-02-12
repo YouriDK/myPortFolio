@@ -76,6 +76,7 @@ nav .text-navbar:nth-child(2):hover ~ .animation {
   left: 110px;
   background-color: #e74c3c;
 }
+
 nav .text-navbar:nth-child(3):hover ~ .animation {
   width: 140px;
   left: 230px;
@@ -92,6 +93,38 @@ nav .text-navbar:nth-child(5):hover ~ .animation {
   background-color: #e67e22;
 }
 nav .text-navbar:nth-child(6):hover ~ .animation {
+  width: 110px;
+  left: 670px;
+  background-color: #22e694;
+}
+/* * When Navlink is Active */
+nav .active-link:nth-child(1) ~ .animation {
+  width: 120px;
+  left: 0;
+  background-color: #1abc9c;
+}
+nav .active-link:nth-child(2) ~ .animation {
+  width: 130px;
+  left: 110px;
+  background-color: #e74c3c;
+}
+
+nav .active-link:nth-child(3) ~ .animation {
+  width: 140px;
+  left: 230px;
+  background-color: #3498db;
+}
+nav .active-link:nth-child(4) ~ .animation {
+  width: 180px;
+  left: 360px;
+  background-color: #9b59b6;
+}
+nav .active-link:nth-child(5) ~ .animation {
+  width: 140px;
+  left: 530px;
+  background-color: #e67e22;
+}
+nav .active-link:nth-child(6) ~ .animation {
   width: 110px;
   left: 670px;
   background-color: #22e694;

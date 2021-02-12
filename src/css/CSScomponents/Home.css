@@ -1,8 +1,10 @@
 .home {
-  background-image: url("../proc.jpg");
+  background-image: url("../../proc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 100%;
+  background-attachment: fixed;
+  width: auto;
+  /*max-width: 100%;*/
 }
 
 .sectionHome {

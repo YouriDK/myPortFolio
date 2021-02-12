@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
-import Project from "./components/Projects";
+import Skill from "./components/Skill";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Professionnal from "./components/Professional";
@@ -29,7 +29,7 @@ function App() {
           //*  On met celui ci avant car au cas où il trouve pas on passe à celle d'en bas , grace à Slug */
         />
         <Route component={Post} path="/post" />
-        <Route component={Project} path="/project" />
+        <Route component={Skill} path="/skill" />
         <Route component={Professionnal} path="/professional" />
         <Route component={Realisation} path="/realisation" />
         <Route component={Formation} path="/formation" />

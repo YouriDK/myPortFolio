@@ -47,7 +47,6 @@
 html,
 body {
   height: 100%;
-  /*background-color: var(--background);*/
   background-color: #021027;
 }
 /*
@@ -90,7 +89,7 @@ footer {
 /* *  Titre de chaque page*/
 
 .titles {
-  margin-top: 80px;
+  margin-bottom: 40px;
   text-align: center;
 }
 

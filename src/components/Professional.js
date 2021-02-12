@@ -22,12 +22,8 @@ export default function Professionnal() {
   }, []);
 
   return (
-    <main className="main">
+    <main className="main home">
       <section className="section">
-        <div className="titles">
-          <span className="title fontPicked">Parcours professionnel</span>
-        </div>
-
         <div>
           <section>
             <div className="container-card">

@@ -21,16 +21,16 @@ export default function Formation() {
   }, []);
 
   return (
-    <main className="main">
+    <main className="main home">
       <section className="section">
-        <div className="titles">
-          <span className="title fontPicked">Parcours scolaire</span>
-        </div>
         <div className="centrer">
           <section className="container-formation">
             {formationData &&
               formationData.map((formation, index) => (
-                <article className="block-formation area" key={formation.title}>
+                <article
+                  className="soft block-formation area"
+                  key={formation.title}
+                >
                   <ul class="circles">
                     <li></li>
                     <li></li>
@@ -68,7 +68,7 @@ export default function Formation() {
                     </span>
                   </div>
                   <br />
-                  <button className="up absolute">
+                  <button className="raise absolute">
                     {" "}
                     Plus d'information ici !
                   </button>

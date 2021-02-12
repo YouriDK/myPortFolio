@@ -6,23 +6,43 @@ export default function NavBar() {
   return (
     <header className="navbar">
       <nav>
-        <NavLink to="/" className="text-navbar">
+        <NavLink to="/" activeClassName="active-link" className="text-navbar">
           Acceuil
         </NavLink>
-        <NavLink to="/formation" className="text-navbar">
+        <NavLink
+          to="/formation"
+          activeClassName="active-link"
+          className="text-navbar"
+        >
           Formation
         </NavLink>
-        <NavLink to="/project" className="text-navbar">
+        <NavLink
+          to="/skill"
+          activeClassName="active-link"
+          className="text-navbar"
+        >
           Compétences
         </NavLink>
-        <NavLink to="/professional" className="text-navbar">
+        <NavLink
+          to="/professional"
+          activeClassName="active-link"
+          className="text-navbar"
+        >
           Expérience professionnelle
         </NavLink>
-        <NavLink to="/realisation" className="text-navbar">
+        <NavLink
+          to="/realisation"
+          activeClassName="active-link"
+          className="text-navbar"
+        >
           Réalisations
         </NavLink>
 
-        <NavLink to="/about" className="text-navbar">
+        <NavLink
+          to="/about"
+          activeClassName="active-link"
+          className="text-navbar"
+        >
           A propos !
         </NavLink>
         <SocialIcon
@@ -32,7 +52,7 @@ export default function NavBar() {
           fgColor="#fff"
           style={{ height: 35, width: 35 }}
         />
-        {<div class="animation start-home"></div>}
+        <div className="animation start-home"></div>
       </nav>
     </header>
   );
