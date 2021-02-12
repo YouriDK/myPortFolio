@@ -42,7 +42,7 @@ export default function Card(props) {
                   onClick={() => {
                     flipAdd(props.index);
                   }}
-                  className="pulse flip rad-button "
+                  className="button pulse flip rad-button "
                 >
                   Cliquer ici pour plus dinformations
                 </button>
@@ -54,12 +54,12 @@ export default function Card(props) {
                 <h2>Responsabilités</h2>
                 <ul>
                   {info.taches.map((tache) => (
-                    <li>{tache}</li>
+                    <li key={tache}>{tache}</li>
                   ))}
                 </ul>
                 <div className="botprice"></div>
                 <button
-                  className=" pulse return flip"
+                  className="button pulse return flip"
                   onClick={() => {
                     flipRemove(props.index);
                   }}

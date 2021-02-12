@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500&display=swap");
+/*
 #root {
   height: 100vh;
   min-width: 100%;
@@ -9,7 +10,7 @@
   height: 100%;
   position: fixed;
   overflow: auto;
-}
+}*/
 
 :root {
   --blue: #007bff;
@@ -60,7 +61,15 @@
 html,
 body {
   height: 100%;
-  background-color: var(--background);
+  width: 100%;
+  /*max-height: 100%;*/
+
+  background-image: url("../../proc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*width: auto;*/
+  /*background-color: var(--background);*/
 }
 /*
 body {
@@ -68,27 +77,27 @@ body {
 }*/
 body {
   margin: 0;
+  padding: 0;
 }
 main {
-  padding-top: -80px;
+  /*padding-top: -80px;*/
   height: 100%;
 }
-
+/*
 .main .section {
   position: absolute;
   width: 100%;
-}
+}*/
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   background-color: var(--blue);
-  height: 35px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   color: var(--yellow);
-  font-size: 1.5rem;
+
   font: italic;
   text-align: center;
 }
@@ -135,4 +144,8 @@ footer {
 .absolute {
   position: relative;
   z-index: 1;
+}
+
+.brygada {
+  font-family: "Brygada 1918", serif;
 }

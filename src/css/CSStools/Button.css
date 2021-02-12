@@ -67,16 +67,16 @@
   --color: #19bc8b;
   --hover: #1973bc;
 }
-button {
+.button {
   transition: 0.25s;
 }
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
   border-color: var(--hover);
   color: #fff;
 }
 
-button {
+.button {
   color: var(--teal);
   background: none;
   border: 2px solid;

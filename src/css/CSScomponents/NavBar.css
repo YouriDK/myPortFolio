@@ -16,8 +16,6 @@
 nav {
   align-items: center;
   display: flex;
-  /* position: relative;
-  background-color: #34495e;*/
   width: 100%;
 
   border-radius: 8px;
@@ -27,8 +25,6 @@ nav .text-navbar {
   text-align: center;
   height: 100%;
   font-size: 15px;
-  /*display: inline-block;
-  position: relative;*/
   z-index: 1;
   text-decoration: none;
   text-transform: uppercase;
@@ -128,4 +124,8 @@ nav .active-link:nth-child(6) ~ .animation {
   width: 110px;
   left: 670px;
   background-color: var(--background6);
+}
+
+.navbar-responsive {
+  display: none;
 }

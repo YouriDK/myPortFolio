@@ -28,10 +28,10 @@ export default function Formation() {
             {formationData &&
               formationData.map((formation, index) => (
                 <article
-                  className="soft block-formation area"
+                  className="soft block-formation "
                   key={formation.title}
                 >
-                  <ul class="circles">
+                  <ul className="circles">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -68,11 +68,10 @@ export default function Formation() {
                     </span>
                   </div>
                   <br />
-                  <button className="raise absolute">
+                  <button className="button raise absolute">
                     {" "}
                     Plus d'information ici !
                   </button>
-                  {console.log(formation.title)}
                 </article>
               ))}
           </section>

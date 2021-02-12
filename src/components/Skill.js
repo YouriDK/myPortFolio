@@ -19,7 +19,6 @@ export default function Skill() {
 
   return (
     <main className="main home">
-      {console.log(skillData)}
       <section className="section">
         <div className="block-skills">
           <div>
@@ -44,7 +43,7 @@ export default function Skill() {
           <div>
             <h2 className="white">Soft Skills</h2>
             <div className="size-skills soft">
-              <ul class="check-list">
+              <ul className="check-list">
                 {skillData &&
                   skillData.map((skill, index) => {
                     if (skill.skilltype === "soft" && skill.type != "software")
@@ -78,7 +77,7 @@ export default function Skill() {
           <div>
             <h2 className="white">Méthode de travail</h2>
             <div className="size-skills soft">
-              <ul class="check-list">
+              <ul className="check-list">
                 {skillData &&
                   skillData.map((skill, index) => {
                     if (skill.skilltype === "soft" && skill.type === "software")

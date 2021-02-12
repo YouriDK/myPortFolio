@@ -7,7 +7,7 @@ export default function Home() {
         <div className="block-title">
           <h1 className=" fontPicked light ">
             {" "}
-            Bonjour & Bienvenue <br />
+            Bienvenue <br />
           </h1>
           <h4 className="fontPicked">
             Je suis Youri, Développeur Web en constante évolution !

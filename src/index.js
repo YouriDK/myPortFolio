@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
-/* import css*/
-import "./css/Responsive.css";
-
+import "./bootstrap/bootstrap.min.css";
+import "./bootstrap/bootstrap-grid.min.css";
 import "./css/CSScomponents/index.css";
+/* import css*/
+
 import "./css/CSScomponents/Home.css";
 import "./css/CSScomponents/NavBar.css";
 import "./css/CSScomponents/Formation.css";
@@ -18,6 +18,8 @@ import "./css/CSStools/Background.css";
 import "./css/CSStools/Card.css";
 import "./css/CSStools/Light.css";
 import "./css/CSStools/SkillBar.css";
+
+import "./css/Responsive.css";
 
 ReactDOM.render(
   <React.StrictMode>

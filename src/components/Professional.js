@@ -29,7 +29,7 @@ export default function Professionnal() {
             <div className="container-card">
               {proData &&
                 proData.map((pro, index) => (
-                  <Card Parcours={pro} index={index} />
+                  <Card Parcours={pro} index={index} key={index} />
                 ))}
             </div>
           </section>

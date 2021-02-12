@@ -10,11 +10,13 @@ import Footer from "./components/Footer";
 import Professionnal from "./components/Professional";
 import Realisation from "./components/Realisation";
 import Formation from "./components/Formation";
+import NavBarResponsive from "./Responsive-components/NavBarResponsive";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
+      <NavBarResponsive />
       <Switch>
         <Route
           component={Home}
