@@ -17,3 +17,10 @@
     column-count: 2;
   }
 }
+
+@media (max-width: 77em) {
+  .block-skills {
+    flex-direction: column;
+    padding: 25px;
+  }
+}

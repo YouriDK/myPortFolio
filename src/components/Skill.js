@@ -76,7 +76,7 @@ export default function Skill() {
             </div>
           </div>
           <div>
-            <h2 className="white">Acquis</h2>
+            <h2 className="white">Méthode de travail</h2>
             <div className="size-skills soft">
               <ul class="check-list">
                 {skillData &&

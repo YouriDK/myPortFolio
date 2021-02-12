@@ -66,7 +66,7 @@ button:focus {
   height: 100%;
   z-index: -1;
   background-size: 100% 100%;
-  background: url("https://i.imgur.com/W3tra4F.gif");
+  /*background: url("https://i.imgur.com/W3tra4F.gif");*/
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -80,27 +80,15 @@ button:focus {
 }
 
 .front {
-  background-image: url("https://i.imgur.com/W3tra4F.gif");
+  /*background-image: url("https://i.imgur.com/W3tra4F.gif");*/
   z-index: 1;
-  box-shadow: 5px 5px 5px #aaa;
-}
-
-.back {
-  box-shadow: 0 0 0 #aaa;
+  /* box-shadow: 5px 5px 5px #aaa;*/
 }
 
 .flipped,
 .hovercard:hover {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
-.flipped .front,
-.hovercard:hover .front {
-  box-shadow: 0 0 0 #aaa;
-}
-.flipped .back,
-.hovercard:hover .back {
-  box-shadow: 5px 5px 5px #aaa;
 }
 
 .bottext {
@@ -181,7 +169,7 @@ button:focus {
 
 .return {
   position: absolute;
-  width: 100%;
+  width: 90%;
   background-color: transparent;
   border: none;
   color: gray;

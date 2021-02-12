@@ -26,7 +26,7 @@ export default function Card(props) {
         <div>
           <div className="deck">
             <div id={props.index} className="card ">
-              <div className="front face">
+              <div className="front face soft">
                 <h2>{info.title}</h2>
                 <ul>
                   <li>Chez {info.entreprise}</li>
@@ -42,7 +42,7 @@ export default function Card(props) {
                   onClick={() => {
                     flipAdd(props.index);
                   }}
-                  className="flip rad-button "
+                  className="pulse flip rad-button "
                 >
                   Cliquer ici pour plus dinformations
                 </button>
@@ -50,18 +50,16 @@ export default function Card(props) {
                   <h3>France</h3>
                 </div>
               </div>
-              <div className="back face">
+              <div className="back face soft">
                 <h2>Responsabilités</h2>
                 <ul>
                   {info.taches.map((tache) => (
                     <li>{tache}</li>
                   ))}
                 </ul>
-                <div className="botprice">
-                  <h3>France</h3>
-                </div>
+                <div className="botprice"></div>
                 <button
-                  className="return flip"
+                  className=" pulse return flip"
                   onClick={() => {
                     flipRemove(props.index);
                   }}

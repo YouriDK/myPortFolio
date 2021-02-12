@@ -2,6 +2,13 @@
 
 #root {
   height: 100vh;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
 }
 
 :root {
@@ -26,7 +33,13 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-  --background: #d7fae0;
+  --background: #021027;
+  --background1: #031e49;
+  --background2: #053279;
+  --background3: #0442a5;
+  --background4: #044dc4;
+  --background5: #0258e2;
+  --background6: #0163ff;
 
   /*
   --breakpoint-xs: 0;
@@ -47,7 +60,7 @@
 html,
 body {
   height: 100%;
-  background-color: #021027;
+  background-color: var(--background);
 }
 /*
 body {
@@ -58,7 +71,6 @@ body {
 }
 main {
   padding-top: -80px;
-  padding-bottom: -35px;
   height: 100%;
 }
 
