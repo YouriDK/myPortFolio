@@ -25,24 +25,49 @@ export default function NavBarResponsive() {
       <DropdownToggle className="dropdown-title">{selection}</DropdownToggle>
       <DropdownMenu className="dropdown-menu">
         <DropdownItem className="dropdownItem">
-          <NavLink onClick={() => setSelection("Acceuil")} to="/">
+          <NavLink
+            isActive={(match, location) => {
+              if (match) {
+                setSelection("Acceuil");
+              }
+            }}
+            to="/"
+          >
             Acceuil
           </NavLink>
         </DropdownItem>
         <DropdownItem className="dropdownItem">
-          <NavLink onClick={() => setSelection("Formation")} to="/formation">
+          <NavLink
+            isActive={(match, location) => {
+              if (match) {
+                setSelection("Formation");
+              }
+            }}
+            to="/formation"
+          >
             Formation
           </NavLink>
         </DropdownItem>
         <DropdownItem className="dropdownItem">
           {" "}
-          <NavLink onClick={() => setSelection("Compétences")} to="/skill">
+          <NavLink
+            isActive={(match, location) => {
+              if (match) {
+                setSelection("Compétences");
+              }
+            }}
+            to="/skill"
+          >
             Compétences
           </NavLink>
         </DropdownItem>
         <DropdownItem className="dropdownItem">
           <NavLink
-            onClick={() => setSelection("Expérience professionnelle")}
+            isActive={(match, location) => {
+              if (match) {
+                setSelection("Expérience professionnelle");
+              }
+            }}
             to="/professional"
           >
             Expérience professionnelle
@@ -50,14 +75,25 @@ export default function NavBarResponsive() {
         </DropdownItem>
         <DropdownItem className="dropdownItem">
           <NavLink
-            onClick={() => setSelection("Réalisations")}
+            isActive={(match, location) => {
+              if (match) {
+                setSelection("Réalisations");
+              }
+            }}
             to="/realisation"
           >
             Réalisations
           </NavLink>{" "}
         </DropdownItem>
         <DropdownItem>
-          <NavLink onClick={() => setSelection("A propos !")} to="/about">
+          <NavLink
+            isActive={(match, location) => {
+              if (match) {
+                setSelection("A propos !");
+              }
+            }}
+            to="/about"
+          >
             A propos !{" "}
           </NavLink>
         </DropdownItem>

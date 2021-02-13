@@ -7,13 +7,13 @@
 @media (max-width: 77em) {
   .block-skills {
     flex-direction: column;
-    padding: 25px;
+    /*padding: 25px;*/
   }
 }
 @media (max-width: 900px) {
   .navbar-responsive {
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 1;
     min-width: 100vh;
   }
@@ -49,6 +49,18 @@
   /* * SKILLS */
   .hard-skills {
     margin-top: 40px;
+  }
+
+  .bar {
+    font-size: 12px;
+  }
+
+  .size-skills {
+    min-width: 340px;
+  }
+
+  .soft {
+    padding: 1rem;
   }
 }
 

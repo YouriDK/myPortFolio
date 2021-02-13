@@ -27,9 +27,7 @@ export default function Skill() {
             <div className="size-skills space">
               <div
                 className={"bar " + "expert"}
-                data-skill={
-                  "Notions > Bases > Intermédiaires > Avancées > Expert"
-                }
+                data-skill={"Notions> Bases> Intermédiaires> Avancées> Expert"}
               ></div>
               {skillData &&
                 skillData.map((skill, index) => {
@@ -65,7 +63,7 @@ export default function Skill() {
         </div>
 
         <div className="container block-skills">
-          <div>
+          <div className="hard-skills">
             <h2 className="centrer decalage white">Langages</h2>
 
             <div className="size-skills">
@@ -101,6 +99,8 @@ export default function Skill() {
               </ul>
             </div>
           </div>
+          <br />
+          <br />
         </div>
       </section>
     </main>
