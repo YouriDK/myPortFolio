@@ -60,34 +60,16 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
   height: 100vh;
-  width: 100vw;
-  /*max-height: 100%;*/
-
+  /*width: 100vw;*/
   background-image: url("../../proc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /*width: auto;*/
-  /*background-color: var(--background);*/
 }
-/*
-body {
-  background-color: #021027;
-}*/
-body {
-  margin: 0;
-  padding: 0;
-}
-main {
-  /*padding-top: -80px;*/
-  height: 100%;
-}
-/*
-.main .section {
-  position: absolute;
-  width: 100%;
-}*/
+
 footer {
   position: absolute;
   bottom: 0;
@@ -143,9 +125,12 @@ footer {
 
 .absolute {
   position: relative;
-  z-index: 1;
+  /*z-index: 1;*/
 }
 
 .brygada {
   font-family: "Brygada 1918", serif;
+}
+.decalage {
+  margin-bottom: 30px;
 }

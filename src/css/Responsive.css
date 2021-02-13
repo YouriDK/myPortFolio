@@ -10,6 +10,47 @@
     padding: 25px;
   }
 }
+@media (max-width: 900px) {
+  .navbar-responsive {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    min-width: 100vh;
+  }
+
+  .dropdown-title,
+  .dropdown-menu {
+    width: 100vw;
+  }
+  .dropdown-title {
+    background-color: var(--background1);
+  }
+  .dropdown-title:hover,
+  .dropdown-title:focus,
+  .dropdown-title:active {
+    background-color: var(--background2);
+  }
+  .dropdown-menu {
+    background-color: var(--background3);
+  }
+
+  .dropdownItem {
+    border-bottom: solid 1px black;
+  }
+
+  .dropdown-menu * {
+    text-align: center;
+    color: white;
+  }
+  .navbar {
+    display: none;
+  }
+
+  /* * SKILLS */
+  .hard-skills {
+    margin-top: 40px;
+  }
+}
 
 @media (max-width: 640px) {
   html {
@@ -46,38 +87,9 @@
     -webkit-text-stroke: 0.4px var(--white);
   }
   /* * NavBar */
-  .navbar-responsive {
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    width: 100vh;
-  }
 
-  .dropdown-title,
-  .dropdown-menu {
-    width: 100vw;
-  }
-  .dropdown-title {
-    background-color: var(--background1);
-  }
-  .dropdown-title:hover,
-  .dropdown-title:focus,
-  .dropdown-title:active {
-    background-color: var(--background2);
-  }
-  .dropdown-menu {
-    background-color: var(--background3);
-  }
-
-  .dropdownItem {
-    border-bottom: solid 1px black;
-  }
-
-  .dropdown-menu * {
-    text-align: center;
-    color: white;
-  }
-  .navbar {
-    display: none;
+  .container-formation {
+    margin-top: 60px;
+    position: relative;
   }
 }

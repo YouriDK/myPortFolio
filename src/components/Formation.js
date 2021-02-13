@@ -24,25 +24,25 @@ export default function Formation() {
     <main className="main home">
       <section className="section">
         <div className="centrer">
-          <section className="container-formation">
+          <ul className="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <section className="container container-formation">
             {formationData &&
               formationData.map((formation, index) => (
                 <article
                   className="soft block-formation "
                   key={formation.title}
                 >
-                  <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
                   <span className="fontPicked font-medium white">
                     {" "}
                     {formation.title}

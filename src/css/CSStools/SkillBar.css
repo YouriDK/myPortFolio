@@ -22,7 +22,7 @@
 .bar {
   background: linear-gradient(to right, #000000 0%, #3275cd 100%);
   padding: 2px;
-  border: solid 1px white;
+  /*border: solid 1px white;*/
   border-radius: 15px;
   margin-bottom: 5px;
   font-size: 14px;

@@ -20,13 +20,17 @@ export default function Skill() {
   return (
     <main className="main home">
       <section className="section">
-        <div className="block-skills">
-          <div>
-            <h2 className="white">Hard Skills</h2>
-            <span id="decal" className="white">
-              {"Notions > Bases > Intermédiaires > Avancés > Expert"}
-            </span>
-            <div className="size-skills">
+        <div className="container block-skills ">
+          <div className="hard-skills">
+            <h2 className="white centrer decalage">Hard Skills</h2>
+
+            <div className="size-skills space">
+              <div
+                className={"bar " + "expert"}
+                data-skill={
+                  "Notions > Bases > Intermédiaires > Avancées > Expert"
+                }
+              ></div>
               {skillData &&
                 skillData.map((skill, index) => {
                   if (skill.skilltype === "hard")
@@ -40,8 +44,10 @@ export default function Skill() {
                 })}
             </div>
           </div>
+
           <div>
-            <h2 className="white">Soft Skills</h2>
+            <h2 className="centrer decalage white hard-skills ">Soft Skills</h2>
+
             <div className="size-skills soft">
               <ul className="check-list">
                 {skillData &&
@@ -57,9 +63,11 @@ export default function Skill() {
             </div>
           </div>
         </div>
-        <div className="block-skills">
+
+        <div className="container block-skills">
           <div>
-            <h2 className="white">Langages</h2>
+            <h2 className="centrer decalage white">Langages</h2>
+
             <div className="size-skills">
               {skillData &&
                 skillData.map((skill, index) => {
@@ -75,7 +83,10 @@ export default function Skill() {
             </div>
           </div>
           <div>
-            <h2 className="white">Méthode de travail</h2>
+            <h2 className="centrer decalage white hard-skills">
+              Méthode de travail
+            </h2>
+
             <div className="size-skills soft">
               <ul className="check-list">
                 {skillData &&

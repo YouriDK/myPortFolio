@@ -12,11 +12,6 @@
 }
 
 .centrer {
-  display: flex;
+  align-items: center;
   text-align: center;
-  margin: 0 auto;
-}
-
-.container-formation {
-  margin-top: 60px;
 }

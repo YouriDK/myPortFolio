@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="main home">
+    <main className="main">
       <section className="section sectionHome">
         <div className="block-title">
           <h1 className=" fontPicked light ">
