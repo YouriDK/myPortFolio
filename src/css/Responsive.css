@@ -12,11 +12,35 @@
 }
 
 @media (max-width: 640px) {
+  html {
+    /* * Pour avoir le fond dans un bon état */
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+  }
   body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    /* !  Pour pouvoir scrool */
+    z-index: 1;
+
+    overflow: auto;
     background-image: url("../procMobile.jpg");
+  }
+  .block-title h1 {
+    font-size: 4em;
   }
 
   .block-title h4 {
+    font-size: 2.5em;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-top: 15%;
     color: var(--background);
     -webkit-text-stroke: 0.4px var(--white);
@@ -26,12 +50,12 @@
     display: flex;
     position: absolute;
     z-index: 1;
-    width: 100%;
+    width: 100vh;
   }
 
   .dropdown-title,
   .dropdown-menu {
-    width: 100vh;
+    width: 100vw;
   }
   .dropdown-title {
     background-color: var(--background1);
@@ -43,6 +67,10 @@
   }
   .dropdown-menu {
     background-color: var(--background3);
+  }
+
+  .dropdownItem {
+    border-bottom: solid 1px black;
   }
 
   .dropdown-menu * {

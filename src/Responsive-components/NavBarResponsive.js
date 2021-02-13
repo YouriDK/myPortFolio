@@ -24,23 +24,23 @@ export default function NavBarResponsive() {
     >
       <DropdownToggle className="dropdown-title">{selection}</DropdownToggle>
       <DropdownMenu className="dropdown-menu">
-        <DropdownItem>
+        <DropdownItem className="dropdownItem">
           <NavLink onClick={() => setSelection("Acceuil")} to="/">
             Acceuil
           </NavLink>
         </DropdownItem>
-        <DropdownItem>
+        <DropdownItem className="dropdownItem">
           <NavLink onClick={() => setSelection("Formation")} to="/formation">
             Formation
           </NavLink>
         </DropdownItem>
-        <DropdownItem>
+        <DropdownItem className="dropdownItem">
           {" "}
           <NavLink onClick={() => setSelection("Compétences")} to="/skill">
             Compétences
           </NavLink>
         </DropdownItem>
-        <DropdownItem>
+        <DropdownItem className="dropdownItem">
           <NavLink
             onClick={() => setSelection("Expérience professionnelle")}
             to="/professional"
@@ -48,7 +48,7 @@ export default function NavBarResponsive() {
             Expérience professionnelle
           </NavLink>
         </DropdownItem>
-        <DropdownItem>
+        <DropdownItem className="dropdownItem">
           <NavLink
             onClick={() => setSelection("Réalisations")}
             to="/realisation"
