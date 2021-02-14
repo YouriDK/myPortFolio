@@ -22,7 +22,7 @@ export default function NavBarResponsive() {
       toggle={remote}
       className="navbar-responsive"
     >
-      <DropdownToggle className="dropdown-title">{selection}</DropdownToggle>
+      <DropdownToggle className="dropdown-title ">{selection}</DropdownToggle>
       <DropdownMenu className="dropdown-menu">
         <DropdownItem className="dropdownItem">
           <NavLink

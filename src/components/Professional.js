@@ -26,7 +26,7 @@ export default function Professionnal() {
       <section className="section">
         <div>
           <section>
-            <div className="container-card">
+            <div className=" container-card">
               {proData &&
                 proData.map((pro, index) => (
                   <Card Parcours={pro} index={index} key={index} />

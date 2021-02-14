@@ -24,34 +24,34 @@ export default function Card(props) {
     <div>
       {info && (
         <div>
-          <div className="deck">
+          <div className="container deck">
             <div id={props.index} className="card ">
-              <div className="front face soft">
+              <div className="front face soft responsive-card">
                 <h2>{info.title}</h2>
                 <ul>
                   <li>Chez {info.entreprise}</li>
                   <li>
-                    De {fun.Month(new Date(info.from).getMonth())}{" "}
-                    {new Date(info.from).getFullYear()} à{" "}
+                    {fun.Month(new Date(info.from).getMonth())}{" "}
+                    {new Date(info.from).getFullYear()}
+                    {"/"}
                     {fun.Month(new Date(info.to).getMonth())}{" "}
                     {new Date(info.to).getFullYear()}
                   </li>
                 </ul>
-                <h3>{info.sujet}</h3>
-                <button
-                  onClick={() => {
-                    flipAdd(props.index);
-                  }}
-                  className="button pulse flip rad-button "
-                >
-                  Cliquer ici pour plus dinformations
-                </button>
-                <div className="bottext">
-                  <h3>France</h3>
+                <div className="subject">{info.sujet}</div>
+                <div className="centrer space">
+                  {" "}
+                  <button
+                    onClick={() => {
+                      flipAdd(props.index);
+                    }}
+                    className="button pulse flip rad-button responsive-button-card "
+                  >
+                    Cliquer ici pour plus dinformations
+                  </button>
                 </div>
               </div>
-              <div className="back face soft">
-                <h2>Responsabilités</h2>
+              <div className="back face soft responsive-card">
                 <ul>
                   {info.taches.map((tache) => (
                     <li key={tache}>{tache}</li>
