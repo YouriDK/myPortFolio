@@ -63,66 +63,66 @@ nav .animation {
   width: 120px;
 }
 nav .text-navbar:nth-child(1):hover ~ .animation {
-  width: 120px;
+  width: 135px;
   left: 0;
   background-color: var(--background1);
 }
 nav .text-navbar:nth-child(2):hover ~ .animation {
-  width: 130px;
-  left: 110px;
+  width: 125px;
+  left: 130px;
   background-color: var(--background2);
 }
 
 nav .text-navbar:nth-child(3):hover ~ .animation {
-  width: 140px;
-  left: 230px;
+  width: 130px;
+  left: 250px;
   background-color: var(--background3);
 }
 nav .text-navbar:nth-child(4):hover ~ .animation {
-  width: 180px;
-  left: 360px;
+  width: 170px;
+  left: 380px;
   background-color: var(--background4);
 }
 nav .text-navbar:nth-child(5):hover ~ .animation {
-  width: 140px;
-  left: 530px;
+  width: 135px;
+  left: 550px;
   background-color: var(--background5);
 }
 nav .text-navbar:nth-child(6):hover ~ .animation {
   width: 110px;
-  left: 670px;
+  left: 680px;
   background-color: var(--background6);
 }
 /* * When Navlink is Active */
 nav .active-link:nth-child(1) ~ .animation {
-  width: 120px;
+  width: 135px;
   left: 0;
   background-color: var(--background1);
 }
 nav .active-link:nth-child(2) ~ .animation {
-  width: 130px;
-  left: 110px;
+  width: 125px;
+  left: 130px;
   background-color: var(--background2);
 }
 
 nav .active-link:nth-child(3) ~ .animation {
-  width: 140px;
-  left: 230px;
+  width: 130px;
+  left: 250px;
   background-color: var(--background3);
 }
 nav .active-link:nth-child(4) ~ .animation {
-  width: 180px;
-  left: 360px;
+  width: 170px;
+  left: 380px;
   background-color: var(--background4);
 }
 nav .active-link:nth-child(5) ~ .animation {
-  width: 140px;
-  left: 530px;
+  width: 135px;
+  left: 550px;
   background-color: var(--background5);
 }
 nav .active-link:nth-child(6) ~ .animation {
   width: 110px;
-  left: 670px;
+  left: 680px;
   background-color: var(--background6);
 }
 

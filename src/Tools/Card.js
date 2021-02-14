@@ -29,7 +29,7 @@ export default function Card(props) {
               <div className="front face soft responsive-card">
                 <h2>{info.title}</h2>
                 <ul>
-                  <li>Chez {info.entreprise}</li>
+                  <li>Entreprise : {info.entreprise}</li>
                   <li>
                     {fun.Month(new Date(info.from).getMonth())}{" "}
                     {new Date(info.from).getFullYear()}

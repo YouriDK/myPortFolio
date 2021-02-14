@@ -12,7 +12,7 @@ import "./css/CSScomponents/NavBar.css";
 import "./css/CSScomponents/Formation.css";
 import "./css/CSScomponents/Professionnal.css";
 import "./css/CSScomponents/Skills.css";
-
+import "./css/CSScomponents/About.css";
 import "./css/CSStools/Button.css";
 import "./css/CSStools/Background.css";
 import "./css/CSStools/Card.css";

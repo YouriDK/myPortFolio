@@ -47,7 +47,7 @@ export default function NavBar() {
           activeClassName="active-link"
           className="text-navbar brygada"
         >
-          A propos !
+          Contact
         </NavLink>
         <SocialIcon
           url="https://linkedin.com/in/youri-choucoutou-690522142"

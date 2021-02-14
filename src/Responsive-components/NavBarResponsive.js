@@ -89,12 +89,12 @@ export default function NavBarResponsive() {
           <NavLink
             isActive={(match, location) => {
               if (match) {
-                setSelection("A propos !");
+                setSelection("Contact");
               }
             }}
             to="/about"
           >
-            A propos !{" "}
+            Contact{" "}
           </NavLink>
         </DropdownItem>
 
