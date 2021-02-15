@@ -85,18 +85,6 @@ export default function NavBarResponsive() {
             Réalisations
           </NavLink>{" "}
         </DropdownItem>
-        <DropdownItem>
-          <NavLink
-            isActive={(match, location) => {
-              if (match) {
-                setSelection("Contact");
-              }
-            }}
-            to="/about"
-          >
-            Contact{" "}
-          </NavLink>
-        </DropdownItem>
 
         {/*  <DropdownItem>
           {" "}

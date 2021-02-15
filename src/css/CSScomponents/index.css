@@ -41,6 +41,7 @@
   --background4: #044dc4;
   --background5: #0258e2;
   --background6: #0163ff;
+  --background1-5: #031e49c0;
 
   /*
   --breakpoint-xs: 0;
@@ -133,4 +134,10 @@ footer {
 }
 .decalage {
   margin-bottom: 30px;
+}
+
+.popoverHeader {
+  background: var(--background1);
+  color: white;
+  border-radius: 10px;
 }

@@ -36,7 +36,7 @@ export default function Formation() {
             <li></li>
             <li></li>
           </ul>
-          <section className="container container-formation">
+          <section className=" container-formation">
             {formationData &&
               formationData.map((formation, index) => (
                 <article
@@ -68,7 +68,7 @@ export default function Formation() {
                     </span>
                   </div>
                   <br />
-                  <button className="button raise absolute">
+                  <button hidden={true} className="button raise absolute">
                     {" "}
                     Plus d'information ici !
                   </button>

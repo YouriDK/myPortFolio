@@ -21,3 +21,8 @@
   font: bold;
   color: var(--light);
 }
+
+.home-intro {
+  display: flex;
+  justify-content: space-around;
+}

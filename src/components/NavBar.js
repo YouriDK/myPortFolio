@@ -42,13 +42,6 @@ export default function NavBar() {
           Réalisations
         </NavLink>
 
-        <NavLink
-          to="/about"
-          activeClassName="active-link"
-          className="text-navbar brygada"
-        >
-          Contact
-        </NavLink>
         <SocialIcon
           url="https://linkedin.com/in/youri-choucoutou-690522142"
           className="icon"
