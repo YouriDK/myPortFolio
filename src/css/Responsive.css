@@ -23,6 +23,13 @@
   }
 }
 /* * Lorsqu'on sort de l'écran PC */
+
+@media (orientation: landscape) {
+  body {
+    background-image: url("../proc.jpg") !important;
+  }
+}
+
 @media (max-width: 900px) {
   /* TODO Pas sur qu'il faille laisser HTML & BODY */
   html {
@@ -39,7 +46,7 @@
 
     /* !  Pour pouvoir scrool */
     z-index: 1;
-    overflow: auto;
+    /* overflow: auto;*/
     background-image: url("../procMobile.jpg");
   }
   .navbar-responsive {
