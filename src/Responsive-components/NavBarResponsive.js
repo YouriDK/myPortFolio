@@ -73,7 +73,7 @@ export default function NavBarResponsive() {
             Expérience professionnelle
           </NavLink>
         </DropdownItem>
-        <DropdownItem className="dropdownItem">
+        <DropdownItem>
           <NavLink
             isActive={(match, location) => {
               if (match) {

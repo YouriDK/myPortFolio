@@ -1,26 +1,30 @@
-@media (min-width: 77em) {
+@media (min-width: 62.5em) {
+  /* * 1000 px 
+  *   Je met sur deux colonnes
+  *  Pour les écran PC
+  * */
   .container-formation {
     column-count: 2;
   }
 }
 
 /*  * Plus grand que mobile mais pas Pc comme les tablettes*/
-@media (min-width: 640px) and (max-width: 77em) {
+@media (max-width: 62.5em) {
+  /* * 640px and 1000px */
   .block-skills {
     flex-direction: column;
-    /*padding: 25px;*/
   }
 
   .container-about {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 70vh;
+    /*height: 70vh;*/
   }
 }
-
+/* * Lorsqu'on sort de l'écran PC */
 @media (max-width: 900px) {
-  /* TODO Pas sur qu'iol faille laisser HTML & BODY */
+  /* TODO Pas sur qu'il faille laisser HTML & BODY */
   html {
     left: 0;
     right: 0;
@@ -35,13 +39,11 @@
 
     /* !  Pour pouvoir scrool */
     z-index: 1;
-
     overflow: auto;
     background-image: url("../procMobile.jpg");
   }
   .navbar-responsive {
     display: flex;
-    /*position: absolute;*/
     z-index: 1;
     min-width: 100vh;
   }
@@ -98,7 +100,6 @@
   html {
     /* * Pour avoir le fond dans un bon état */
     position: fixed;
-
     left: 0;
     right: 0;
     top: 0;
@@ -195,5 +196,28 @@
   .block-skills {
     flex-direction: column;
     justify-content: space-around;
+  }
+}
+
+@media (max-height: 480px) {
+  .container-about {
+    margin-top: 50px;
+  }
+
+  #clipboard {
+    margin: auto;
+  }
+}
+
+@media (max-height: 285px) {
+  #clipboard {
+    margin: auto;
+  }
+}
+
+/* ! Galaxy Fold */
+@media (max-width: 285px) {
+  .btn-about {
+    font-size: 0.8em;
   }
 }
