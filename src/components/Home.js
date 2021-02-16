@@ -60,8 +60,8 @@ export default function Home() {
           />
 
           <div className="text-bio">
-            Je suis Youri, Développeur Web en constante évolution,
-            Javascript/ReactJS sont mes points de départ mais je suis prêt à
+            Je suis Youri, Développeur Web en constante évolution.
+            Javascript/React sont mes points de départ mais je suis prêt à
             sortir de ma zone de confort et aller à la decouverte de nouvelles
             technologies.
           </div>

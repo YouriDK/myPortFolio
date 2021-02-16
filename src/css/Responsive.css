@@ -101,6 +101,10 @@
   .soft {
     padding: 1rem;
   }
+
+  .fix-width {
+    min-width: 85vw;
+  }
 }
 
 @media (max-width: 640px) {
@@ -146,7 +150,7 @@
   /* *  Professionnal */
   .deck {
     width: 100vw;
-    height: 60vh;
+    /*height: 60vh;*/
   }
 
   .front h2,

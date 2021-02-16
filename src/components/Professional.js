@@ -28,9 +28,13 @@ export default function Professionnal() {
           <section>
             <div className=" container-card">
               {proData &&
-                proData.map((pro, index) => (
-                  <Card Parcours={pro} index={index} key={index} />
-                ))}
+                proData
+                  .sort((a, b) =>
+                    a.index > b.index ? -1 : 1
+                  ) /* Pour ordonner */
+                  .map((pro, index) => (
+                    <Card Parcours={pro} index={index} key={index} />
+                  ))}
             </div>
           </section>
         </div>

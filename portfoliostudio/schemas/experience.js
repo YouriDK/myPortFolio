@@ -8,6 +8,7 @@ export default {
     { name: "to", title: "To", type: "date" },
     { name: "entreprise", title: "Entreprise", type: "string" },
     { name: "sujet", title: "Sujet", type: "string" },
+    { name: "index", title: "Index", type: "number" },
 
     {
       name: "taches",

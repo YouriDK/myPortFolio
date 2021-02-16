@@ -14,6 +14,7 @@ export default function Formation() {
             school,
             place,
             options,
+            index,
             notions }`
     )
       .then((data) => setFormation(data))
@@ -22,58 +23,62 @@ export default function Formation() {
 
   return (
     <main className="main home">
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
       <section className="section">
         <div className="centrer">
-          <ul className="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
           <section className=" container-formation">
             {formationData &&
-              formationData.map((formation, index) => (
-                <article
-                  className="soft block-formation "
-                  key={formation.title}
-                >
-                  <span className="fontPicked font-medium white">
-                    {" "}
-                    {formation.title}
-                  </span>
-                  <br />
-                  <br />
-                  <span className="space font-normal white">
-                    {" "}
-                    {formation.options}
-                  </span>
-                  <br />
-                  <div className="space">
-                    <span className="space font-normal white">
-                      {formation.school}
-                    </span>{" "}
-                    <br />
-                    <span className="space font-normal white">
-                      {formation.place}
+              formationData
+                .sort((a, b) =>
+                  a.index > b.index ? -1 : 1
+                ) /* Pour ordonner */
+                .map((formation, index) => (
+                  <article
+                    className="soft block-formation fix-width"
+                    key={formation.index}
+                  >
+                    <span className="fontPicked font-medium white">
+                      {" "}
+                      {formation.title}
                     </span>
                     <br />
+                    <br />
                     <span className="space font-normal white">
-                      {new Date(formation.year).getFullYear()}
+                      {" "}
+                      {formation.options}
                     </span>
-                  </div>
-                  <br />
-                  <button hidden={true} className="button raise absolute">
-                    {" "}
-                    Plus d'information ici !
-                  </button>
-                </article>
-              ))}
+                    <br />
+                    <div className="space">
+                      <span className="space font-normal white">
+                        {formation.school}
+                      </span>{" "}
+                      <br />
+                      <span className="space font-normal white">
+                        {formation.place}
+                      </span>
+                      <br />
+                      <span className="space font-normal white">
+                        {new Date(formation.year).getFullYear()}
+                      </span>
+                    </div>
+                    <br />
+                    <button hidden={true} className="button raise absolute">
+                      {" "}
+                      Plus d'information ici !
+                    </button>
+                  </article>
+                ))}
           </section>
         </div>
       </section>
