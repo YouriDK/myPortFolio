@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SanityClient from "../client.js";
 
-export default function Skill() {
+export default function Skill(props) {
   const [skillData, setSkillData] = useState(null);
 
   useEffect(() => {
@@ -9,7 +9,8 @@ export default function Skill() {
       `*[_type == "skills"]{
         title, 
         skilltype, 
-        type, 
+        type,
+        equi, 
         level,
       }`
     )
@@ -22,7 +23,7 @@ export default function Skill() {
       <section className="section">
         <div className="container block-skills ">
           <div className="hard-skills">
-            <h2 className="white centrer decalage">Hard Skills</h2>
+            <h2 className="white centrer decalage font-title ">Hard Skills</h2>
 
             <div className="size-skills space">
               <div
@@ -46,26 +47,43 @@ export default function Skill() {
           </div>
 
           <div>
-            <h2 className="centrer decalage white hard-skills ">Soft Skills</h2>
+            <h2 className="centrer decalage white hard-skills font-title ">
+              Soft Skills
+            </h2>
 
             <div className="size-skills soft">
               <ul className="check-list">
                 {skillData &&
-                  skillData.map((skill, index) => {
-                    if (skill.skilltype === "soft" && skill.type != "software")
-                      return (
-                        <li className="white" key={index}>
-                          {skill.title}
-                        </li>
-                      );
-                  })}
+                  (props.value === "FR"
+                    ? skillData.map((skill, index) => {
+                        if (
+                          skill.skilltype === "soft" &&
+                          skill.type != "software"
+                        )
+                          return (
+                            <li className="white font-normal" key={index}>
+                              {skill.title}
+                            </li>
+                          );
+                      })
+                    : skillData.map((skill, index) => {
+                        if (
+                          skill.skilltype === "soft" &&
+                          skill.type != "software"
+                        )
+                          return (
+                            <li className="white font-normal" key={index}>
+                              {skill.equi}
+                            </li>
+                          );
+                      }))}
               </ul>
             </div>
           </div>
         </div>
-        <div className="container block-skills">
+        <div className="container block-skills space">
           <div className="hard-skills">
-            <h2 className="centrer decalage white">Langages</h2>
+            <h2 className="centrer decalage white font-title ">Langages</h2>
 
             <div className="size-skills">
               {skillData &&
@@ -82,21 +100,36 @@ export default function Skill() {
             </div>
           </div>
           <div>
-            <h2 className="centrer decalage white hard-skills">
+            <h2 className="centrer decalage white hard-skills font-title ">
               Méthode de travail
             </h2>
 
             <div className="size-skills soft">
               <ul className="check-list">
                 {skillData &&
-                  skillData.map((skill, index) => {
-                    if (skill.skilltype === "soft" && skill.type === "software")
-                      return (
-                        <li className="white" key={index}>
-                          {skill.title}
-                        </li>
-                      );
-                  })}
+                  (props.value === "FR"
+                    ? skillData.map((skill, index) => {
+                        if (
+                          skill.skilltype === "soft" &&
+                          skill.type === "software"
+                        )
+                          return (
+                            <li className="white font-normal" key={index}>
+                              {skill.title}
+                            </li>
+                          );
+                      })
+                    : skillData.map((skill, index) => {
+                        if (
+                          skill.skilltype === "soft" &&
+                          skill.type === "software"
+                        )
+                          return (
+                            <li className="white font-normal" key={index}>
+                              {skill.equi}
+                            </li>
+                          );
+                      }))}
               </ul>
             </div>
           </div>

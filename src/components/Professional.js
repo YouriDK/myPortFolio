@@ -3,8 +3,9 @@ import SanityClient from "../client.js";
 import * as fun from "../Tools/Function";
 
 import Card from "../Tools/Card";
+import { propTypes } from "@sanity/block-content-to-react";
 
-export default function Professionnal() {
+export default function Professionnal(props) {
   const [proData, setproData] = useState(null);
 
   useEffect(() => {
@@ -15,11 +16,14 @@ export default function Professionnal() {
           to,
           entreprise,
           sujet,
+          job,
+          subject,
+          task,
           taches }`
     )
       .then((data) => setproData(data))
       .catch(console.error);
-  }, []);
+  }, [props.value]);
 
   return (
     <main className="main home">
@@ -33,7 +37,12 @@ export default function Professionnal() {
                     a.index > b.index ? -1 : 1
                   ) /* Pour ordonner */
                   .map((pro, index) => (
-                    <Card Parcours={pro} index={index} key={index} />
+                    <Card
+                      Parcours={pro}
+                      index={index}
+                      key={index}
+                      lang={props.value}
+                    />
                   ))}
             </div>
           </section>

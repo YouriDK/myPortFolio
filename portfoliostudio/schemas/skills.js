@@ -4,6 +4,7 @@ export default {
   type: "document",
   fields: [
     { name: "title", title: "Title", type: "string" },
+    { name: "equi", title: "English", type: "string" },
     {
       name: "skilltype",
       title: "Skills Type",

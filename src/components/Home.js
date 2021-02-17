@@ -9,11 +9,13 @@ function urlFor(source) {
   return builder.image(source);
 }
 
-export default function Home() {
+export default function Home(props) {
   const [author, setAuthor] = useState(null);
   const [tooltipOpen, setTooltipOpen] = useState(false);
   const [text, setText] = useState(
-    "Cliquer pour sauvegarder dans le presse-papiers"
+    props.value === "FR"
+      ? "Cliquer pour sauvegarder dans le presse-papiers"
+      : "Click to save in the clipboard"
   );
 
   const toggle = () => {
@@ -29,7 +31,9 @@ export default function Home() {
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
-      setText("Sauvegardé dans le presse-papiers !");
+      props.value === "FR"
+        ? setText("Sauvegardé dans le presse-papiers !")
+        : setText("Saved in the clipboard !");
     } catch {
       console.error();
     }
@@ -38,6 +42,7 @@ export default function Home() {
   }
 
   useEffect(() => {
+    console.log("Boom", props.value);
     SanityClient.fetch(
       `*[_type == "author"]{
       name,bio,
@@ -46,7 +51,7 @@ export default function Home() {
     )
       .then((data) => setAuthor(data[0]))
       .catch(console.error);
-  }, []);
+  }, [props.value]);
   if (!author) return <div> Loading ....</div>;
 
   return (
@@ -60,10 +65,21 @@ export default function Home() {
           />
 
           <div className="text-bio">
-            Je suis Youri, Développeur Web en constante évolution.
-            Javascript/React sont mes points de départ mais je suis prêt à
-            sortir de ma zone de confort et aller à la decouverte de nouvelles
-            technologies.
+            {props.value === "FR" ? (
+              <div className="font-normal">
+                Je suis Youri, Développeur Web en constante évolution.
+                Javascript/React sont mes points de départ mais je suis prêt à
+                sortir de ma zone de confort et aller à la decouverte de
+                nouvelles technologies.
+              </div>
+            ) : (
+              <div className="font-normal">
+                Hi ! I'm Youri, Web developper constantly evolving, how it's
+                going ? Javascript/React are my starting points but I am always
+                ready to get out of my confort zone to discover new technologies
+                and bring new ideas.
+              </div>
+            )}
           </div>
 
           <button

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { SocialIcon } from "react-social-icons";
+import Flag from "react-world-flags";
 
 import {
   ButtonDropdown,
@@ -9,10 +9,15 @@ import {
   DropdownItem,
 } from "reactstrap";
 
-export default function NavBarResponsive() {
+export default function NavBarResponsive(props) {
   const [dropdownOpen, setOpen] = useState(false);
   const [selection, setSelection] = useState("Acceuil");
+  const [lang, setLang] = useState("FR");
 
+  function ChangeLang(params) {
+    setLang(params);
+    props.onChangeLang(params);
+  }
   const remote = () => setOpen(!dropdownOpen);
 
   return (
@@ -23,80 +28,155 @@ export default function NavBarResponsive() {
       className="navbar-responsive"
     >
       <DropdownToggle className="dropdown-title ">{selection}</DropdownToggle>
-      <DropdownMenu className="dropdown-menu">
-        <DropdownItem className="dropdownItem">
-          <NavLink
-            isActive={(match, location) => {
-              if (match) {
-                setSelection("Acceuil");
-              }
-            }}
-            to="/"
-          >
-            Acceuil
-          </NavLink>
-        </DropdownItem>
-        <DropdownItem className="dropdownItem">
-          <NavLink
-            isActive={(match, location) => {
-              if (match) {
-                setSelection("Formation");
-              }
-            }}
-            to="/formation"
-          >
-            Formation
-          </NavLink>
-        </DropdownItem>
-        <DropdownItem className="dropdownItem">
-          {" "}
-          <NavLink
-            isActive={(match, location) => {
-              if (match) {
-                setSelection("Compétences");
-              }
-            }}
-            to="/skill"
-          >
-            Compétences
-          </NavLink>
-        </DropdownItem>
-        <DropdownItem className="dropdownItem">
-          <NavLink
-            isActive={(match, location) => {
-              if (match) {
-                setSelection("Expérience professionnelle");
-              }
-            }}
-            to="/professional"
-          >
-            Expérience professionnelle
-          </NavLink>
-        </DropdownItem>
-        <DropdownItem>
-          <NavLink
-            isActive={(match, location) => {
-              if (match) {
-                setSelection("Réalisations");
-              }
-            }}
-            to="/realisation"
-          >
-            Réalisations
-          </NavLink>{" "}
-        </DropdownItem>
-
-        {/*  <DropdownItem>
-          {" "}
-          <SocialIcon
-            url="https://linkedin.com/in/youri-choucoutou-690522142"
-            className="iconkk"
-            target="_blank"
-            fgColor="#fff"
-            style={{ height: 35, width: 35 }}
-          />
-      </DropdownItem>*/}
-      </DropdownMenu>
+      {lang === "FR" ? (
+        <DropdownMenu className="dropdown-menu">
+          <DropdownItem className="dropdownItem">
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Acceuil");
+                }
+              }}
+              to="/"
+            >
+              Acceuil
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem className="dropdownItem">
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Formation");
+                }
+              }}
+              to="/formation"
+            >
+              Formation
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem className="dropdownItem">
+            {" "}
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Compétences");
+                }
+              }}
+              to="/skill"
+            >
+              Compétences
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem className="dropdownItem">
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Expérience professionnelle");
+                }
+              }}
+              to="/professional"
+            >
+              Expérience professionnelle
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem className="dropdownItem">
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Réalisations");
+                }
+              }}
+              to="/realisation"
+            >
+              Réalisations
+            </NavLink>{" "}
+          </DropdownItem>
+          <DropdownItem>
+            {
+              <Flag
+                onClick={() => ChangeLang("EN")}
+                code="GBR"
+                height="20"
+                className="marginAuto"
+              />
+            }
+          </DropdownItem>
+        </DropdownMenu>
+      ) : (
+        <DropdownMenu className="dropdown-menu">
+          <DropdownItem className="dropdownItem">
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Acceuil");
+                }
+              }}
+              to="/"
+            >
+              Home
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem className="dropdownItem">
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Formation");
+                }
+              }}
+              to="/formation"
+            >
+              Education
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem className="dropdownItem">
+            {" "}
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Compétences");
+                }
+              }}
+              to="/skill"
+            >
+              Skills
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem className="dropdownItem">
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Expérience professionnelle");
+                }
+              }}
+              to="/professional"
+            >
+              Professionnal experience
+            </NavLink>
+          </DropdownItem>
+          <DropdownItem className="dropdownItem">
+            <NavLink
+              isActive={(match, location) => {
+                if (match) {
+                  setSelection("Réalisations");
+                }
+              }}
+              to="/realisation"
+            >
+              Realisations
+            </NavLink>{" "}
+          </DropdownItem>
+          <DropdownItem>
+            {
+              <Flag
+                onClick={() => ChangeLang("FR")}
+                code="FRA"
+                height="20"
+                className="marginAuto"
+              />
+            }
+          </DropdownItem>
+        </DropdownMenu>
+      )}
     </ButtonDropdown>
   );
 }
