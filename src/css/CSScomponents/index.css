@@ -48,14 +48,14 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-  --background: #021027;
-  --background1: #031e49;
-  --background2: #053279;
-  --background3: #0442a5;
-  --background4: #044dc4;
-  --background5: #0258e2;
-  --background6: #0163ff;
-  --background1-5: #031e49c0;
+  --background: #00361d;
+  --background1: #004d29;
+  --background2: #006636;
+  --background3: #018648;
+  --background4: #009b53;
+  --background5: #00cc6d;
+  --background6: #01ee7f;
+  --background1-5: #004d299c;
 
   /*
   --breakpoint-xs: 0;
@@ -79,7 +79,7 @@ body {
   padding: 0;
   height: 100vh;
   /*width: 100vw;*/
-  background-image: url("../../proc.jpg");
+  background-image: url("../../fond.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

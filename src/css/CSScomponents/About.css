@@ -35,7 +35,7 @@
   border-radius: 50%;
   border: 5px solid #272133;
   /* margin-top: 20px; */
-  box-shadow: 0 10px 50px var(--blue);
+  box-shadow: 0 10px 50px var(--green);
 }
 
 .draw-border {

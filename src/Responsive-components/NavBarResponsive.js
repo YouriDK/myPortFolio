@@ -108,7 +108,7 @@ export default function NavBarResponsive(props) {
             <NavLink
               isActive={(match, location) => {
                 if (match) {
-                  setSelection("Acceuil");
+                  setSelection("Home");
                 }
               }}
               to="/"
@@ -120,7 +120,7 @@ export default function NavBarResponsive(props) {
             <NavLink
               isActive={(match, location) => {
                 if (match) {
-                  setSelection("Formation");
+                  setSelection("Education");
                 }
               }}
               to="/formation"
@@ -133,7 +133,7 @@ export default function NavBarResponsive(props) {
             <NavLink
               isActive={(match, location) => {
                 if (match) {
-                  setSelection("Compétences");
+                  setSelection("Skills");
                 }
               }}
               to="/skill"
@@ -145,7 +145,7 @@ export default function NavBarResponsive(props) {
             <NavLink
               isActive={(match, location) => {
                 if (match) {
-                  setSelection("Expérience professionnelle");
+                  setSelection("Professionnal experience");
                 }
               }}
               to="/professional"
@@ -157,7 +157,7 @@ export default function NavBarResponsive(props) {
             <NavLink
               isActive={(match, location) => {
                 if (match) {
-                  setSelection("Réalisations");
+                  setSelection("Realisations");
                 }
               }}
               to="/realisation"

@@ -26,7 +26,7 @@
 
 @media (orientation: landscape) {
   body {
-    background-image: url("../proc.jpg") !important;
+    background-image: url("../fond.jpg") !important;
   }
 }
 
@@ -47,7 +47,7 @@
     /* !  Pour pouvoir scrool */
     z-index: 1;
     /* overflow: auto;*/
-    background-image: url("../procMobile.jpg");
+    /* background-image: url("../procMobile.jpg");*/
   }
   .navbar-responsive {
     display: flex;
@@ -126,7 +126,7 @@
     z-index: 1;
 
     overflow: auto;
-    background-image: url("../procMobile.jpg");
+    /* background-image: url("../procMobile.jpg");*/
   }
   .block-title h1 {
     font-size: 4em;
@@ -207,6 +207,10 @@
   .block-skills {
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .back ul li {
+    margin-top: 0px;
   }
 }
 

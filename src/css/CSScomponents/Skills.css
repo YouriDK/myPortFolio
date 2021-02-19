@@ -4,7 +4,7 @@
   height: 800px;*/
   /*justify-content: center;*/
   justify-content: space-around;
-  margin: auto;
+  /*margin: auto;*/
 }
 
 .size-skills {
@@ -50,7 +50,7 @@
 }
 
 .soft {
-  background: linear-gradient(to right, #3275cd 0%, #000000 100%);
+  background: linear-gradient(to right, var(--background3) 0%, #000000 100%);
 
   border-radius: 20px;
   padding: 1.5rem;
