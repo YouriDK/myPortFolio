@@ -1,8 +1,5 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 /* ! https://codepen.io/Ossoona/pen/GJmvmJ */
-* {
-  box-sizing: border-box;
-}
 
 .container-card {
   /* 
@@ -11,7 +8,6 @@
 
   display: flex;
   flex-wrap: wrap;
-  display: flex;
   justify-content: space-around;
 }
 

@@ -43,7 +43,10 @@ function App() {
           render={(props) => <Professionnal value={Glang} />}
           path="/professional"
         />
-        <Route component={Realisation} path="/realisation" />
+        <Route
+          render={(props) => <Realisation value={Glang} />}
+          path="/realisation"
+        />
         <Route render={(props) => <Skill value={Glang} />} path="/skill" />
         <Route
           render={(props) => <Formation value={Glang} />}

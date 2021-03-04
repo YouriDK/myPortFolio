@@ -3,7 +3,6 @@ import SanityClient from "../client.js";
 import * as fun from "../Tools/Function";
 
 import Card from "../Tools/Card";
-import { propTypes } from "@sanity/block-content-to-react";
 
 export default function Professionnal(props) {
   const [proData, setproData] = useState(null);
@@ -30,7 +29,7 @@ export default function Professionnal(props) {
       <section className="section">
         <div>
           <section>
-            <div className=" container-card">
+            <div className="container-card">
               {proData &&
                 proData
                   .sort((a, b) =>

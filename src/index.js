@@ -18,6 +18,7 @@ import "./css/CSStools/Background.css";
 import "./css/CSStools/Card.css";
 import "./css/CSStools/Light.css";
 import "./css/CSStools/SkillBar.css";
+import "./css/CSStools/Project.css";
 
 import "./css/Responsive.css";
 

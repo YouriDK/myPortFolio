@@ -3,9 +3,9 @@ import React from "react";
 export default function Ghost() {
   return (
     <div>
-      <div class="container-ghost">
+      <div className="container-ghost">
         <svg
-          class="ghost"
+          className="ghost"
           version="1.1"
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
@@ -101,10 +101,10 @@ s12.625-8.375,12.625-8.375s2.25-3.875,7.25,0.375s7.625,9.75,14.375,8.125C114.739
           />
         </svg>
 
-        <p class="shadowFrame">
+        <p className="shadowFrame">
           <svg
             version="1.1"
-            class="shadow"
+            className="shadow"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             xlink="http://www.w3.org/1999/xlink"

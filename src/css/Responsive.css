@@ -105,6 +105,32 @@
   .fix-width {
     min-width: 85vw;
   }
+
+  .container-card {
+    flex-direction: column;
+  }
+  .cart-project {
+    margin: auto;
+    max-width: 90vw;
+    margin-bottom: 50px;
+  }
+
+  /* * Project Réalisations */
+  .card__text {
+    font-size: 1rem;
+  }
+
+  .card-project {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 90vw;
+    max-height: 135vh;
+    margin-bottom: 50px;
+  }
+
+  .card__content {
+    padding: 0rem 1rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -211,6 +237,20 @@
 
   .back ul li {
     margin-top: 0px;
+  }
+
+  /* * Projects */
+
+  .card__img {
+    height: 7rem;
+  }
+  .card__header {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card__text {
+    margin-bottom: 0;
   }
 }
 
