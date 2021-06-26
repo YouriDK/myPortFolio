@@ -21,7 +21,7 @@ export default {
       name: 'author',
       title: 'Author',
       type: 'reference',
-      to: {type: 'author'},
+      to: { type: 'author' },
     },
     {
       name: 'mainImage',
@@ -31,12 +31,7 @@ export default {
         hotspot: true,
       },
     },
-    {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    },
+
     {
       name: 'publishedAt',
       title: 'Published at',
@@ -55,11 +50,11 @@ export default {
       author: 'author.name',
       media: 'mainImage',
     },
-    prepare(selection) {
-      const {author} = selection
+    prepare(selection: any) {
+      const { author } = selection;
       return Object.assign({}, selection, {
         subtitle: author && `by ${author}`,
-      })
+      });
     },
   },
-}
+};

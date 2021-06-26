@@ -1,6 +1,34 @@
+
 {
-  // Note: This config is only used to help editors like VS Code understand/resolve
-  // parts, the actual transpilation is done by babel. Any compiler configuration in
-  // here will be ignored.
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es5",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true
+  },
   "include": ["./node_modules/@sanity/base/types/**/*.ts", "./**/*.ts", "./**/*.tsx"]
 }

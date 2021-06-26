@@ -1,0 +1,29 @@
+{
+  "intro": {
+    "FR": "Je  suis Youri, Développeur Web en constante évolution. Javascript/React sont mes points de départ mais je suis prêt à sortir de ma zone de confort et aller à la decouverte de nouvelles technologies.",
+    "EN": "Hi ! I'm Youri, Web developper constantly evolving, how it's going ? Javascript/React are my starting points but I am always ready to get out of my confort zone to discover new technologies and bring new ideas."
+  },
+  "mail": "youri.choucoutou@gmail.com",
+  "navbar": {
+    "accueil": {
+      "FR": "Acceuil",
+      "EN": "Home"
+    },
+    "formation": {
+      "FR": "Formation",
+      "EN": "Formation"
+    },
+    "competences": {
+      "FR": "Compétence",
+      "EN": "Skills"
+    },
+    "xp": {
+      "FR": "Expérience professionnelle",
+      "EN": "Professionnal experience"
+    },
+    "realisations": {
+      "FR": "Réalisations",
+      "EN": "Realisations"
+    }
+  }
+}
